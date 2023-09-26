@@ -1,0 +1,15 @@
+<html>
+    <center>
+     <form action="/ticket/edit_poster" method="post" enctype="multipart/form-data">
+     <h1><%=data.moviename %></h1>
+     <img src="/images/<%=data.movieposter %>" width="300"><br>
+     <b>Select New Image u Want to Upload..</b><br><br>
+     <input type="file" name="movieposter" required><br><br>
+     <input type="hidden" name="oldfilename" value="<%=data.movieposter %>"><br>
+     <input type="hidden" name="movieid" value="<%=data.movieid %>"><br>
+     <input type="submit" value="Upload New Image">
+     
+     </form>
+
+    </center>
+</html>
